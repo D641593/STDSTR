@@ -17,13 +17,14 @@
 
 <a name = '2-package-install'></a>
 ## 2. 套件安裝
-- **安裝paddlepaddle**<br>
-可根據cuda版本與作業系統下載不同paddlepaddle版本<br>
-https://www.paddlepaddle.org.cn/ 
 ```bash
     # Linux example
     conda create --name STDR 
     source activate STDR
+
+    # clone repo
+    git clone https://github.com/D641593/STDSTR.git
+    cd STDSTR
 
     # this installs the right pip and dependencies for the fresh python
     conda install ipython pip
@@ -33,10 +34,6 @@ https://www.paddlepaddle.org.cn/
 
     # install PyTorch with cuda-10.1
     conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
-
-    # clone repo
-    git clone https://github.com/MhLiao/DB.git
-    cd STDSTR
 
     # make sure your cuda path of $CUDA_HOME is the same version as your cuda in PyTorch
     # you need to delete the build directory before you re-build it.
