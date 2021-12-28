@@ -1,0 +1,8 @@
+__pycache__
+*.log
+*.zip
+*.jpg
+*.txt
+*.pth
+*.csv
+weight

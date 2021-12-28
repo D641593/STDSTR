@@ -1,0 +1,23 @@
+logging_file: STRtrainLog.log 
+train: 
+  dataset:
+    data_root_dir: ./train_data/
+    train_label_file: train_list.txt
+    charsDict: myDict.txt
+  model_save_epoch: 10
+  pretrain_model: None
+  batch_size: 8
+  learning_rate: 0.00005
+  epoch: 100
+  max_Length: 41
+  log_step: 100
+  model_save_root: train_models
+  model_save_dir: STR_model
+  model_valid_epoch: 10
+valid:
+  dataset:
+    data_root_dir: ./train_data/
+    valid_label_file: label.txt
+    charsDict: myDict.txt
+  
+  

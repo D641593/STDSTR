@@ -1,0 +1,5 @@
+image_dir: train_data/private_high_crop/
+input_csv: empty.csv
+output_csv: ans.csv
+model_path: train_models/pesudo_epoch_15.pth
+charsDict: train_data/myDict.txt
