@@ -142,7 +142,7 @@ cd STR
             | ...
     ```
     資料集下載如下<br>
-    [datasets_STR](https://paddleocr.bj.bcebos.com/dygraph_v2.0/multilingual/chinese_cht_mobile_v2.0_rec_train.tar)<br>
+    [datasets_STR](https://drive.google.com/file/d/15PG4GS-vw-wxTDbuG0nOozIGkKpN-w--/view?usp=sharing)<br>
 
 - **訓練**<br>
     須定義train.yaml
