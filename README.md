@@ -188,7 +188,7 @@ cd STR
     執行 STDtoSTR.py，將STD/demo_results內的結果整合成empty.csv，並根據辨識結果切割STD/datasets/logoHigh/private的圖片至STR/train_data/private_high_crop
     ```
     cd ..
-    python STDtoSTR.py --res_img_dir STD/demo_results/ --img_dir STD/datasets/private --output_dir STR/train_data/private_high_crop
+    python STDtoSTR.py --res_img_dir STD/demo_results/ --img_dir STD/datasets/logoHigh/private --output_dir STR/train_data/private_high_crop
     ```
     完成後定義predict.yaml，執行
     ```bash
