@@ -16,3 +16,4 @@ imgaug
 fastai
 LMDB
 Pillow
+flask

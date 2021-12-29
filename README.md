@@ -39,7 +39,7 @@
     # you need to delete the build directory before you re-build it.
     echo $CUDA_HOME
     # if $CUDA_HOME is not your cuda path, you have to define cuda path
-    # >> export CUDA_HOME='usr/local/cuda'  
+    # >> export CUDA_HOME='/usr/local/cuda'  
     cd STD/assets/ops/dcn/
     python setup.py build_ext --inplace
 ```
