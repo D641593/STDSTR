@@ -4,6 +4,7 @@ import numpy as np
 import csv
 import math
 import argparse
+import shutil
 
 def getTargetPoints(points):
     dis = []
@@ -32,7 +33,7 @@ if __name__ == '__main__':
   rootdir = args.res_img_dir
   imgdir = args.img_dir
   outdir = args.output_dir
-  os.rmdir(outdir)
+  shutil.rmtree(outdir)
   os.mkdir(outdir)
 
   txtfiles = [i for i in sorted(list(os.listdir(rootdir))) if '.txt' in i]
