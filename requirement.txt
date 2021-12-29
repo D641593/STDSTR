@@ -1,7 +1,7 @@
 pyyaml 
 tqdm 
 tensorboardX 
-opencv-python==4.1.2.30
+opencv-python
 anyconfig 
 munch 
 scipy 
@@ -10,14 +10,9 @@ shapely
 pyclipper 
 gevent 
 gevent-websocket 
-flask 
 editdistance 
 scikit-image 
-imgaug==0.2.8
-torch==1.1.0
-torchvision==0.3.0
-fastai==1.0.60
+imgaug
+fastai
 LMDB
 Pillow
-opencv-python
-tensorboardX
