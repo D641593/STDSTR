@@ -51,6 +51,10 @@
 cd STD
 ```
 - **STD 資料集**<br>
+    請建立datasets資料夾
+    ```
+    mkdir datasets
+    ```
     須在STD/datasets/logoHigh/放置訓練資料集，架構如下<br>
      ```
     |-logoHigh
@@ -96,9 +100,13 @@ cd STD
     訓練完成後模型儲存在STD/workspace/SegDetectorModel-seg_detector/resnet152/L1BalanceCELoss/model<br>
 
 - **偵測**<br>
-    偵測可單張圖片或一整個資料夾，須給定yaml檔案和模型參數檔案<br>
     已訓練模型參數如下<br>
     [STD trained models](https://drive.google.com/drive/folders/1HORS6VOe6v_sb3AB4zwE8M39VoJqE4mF?usp=sharing)<br>
+    請建立weight資料夾，將下載模型參數放置於此資料夾
+    ```
+    mkdir weight
+    ```
+    偵測可單張圖片或一整個資料夾，須給定yaml檔案和模型參數檔案<br>
     ```bash
     # 單張圖片
     CUDA_VISIBLE_DEVICES=0 python demo.py experiments/seg_detector/logoHigh_resnet152_interd2v2.yaml --image_path datasets/logoHigh/private/img_21000.jpg --resume weight/model_epoch_474_minibatch_810000 --box_thresh 0.5 --thresh 0.5

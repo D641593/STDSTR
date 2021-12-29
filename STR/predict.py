@@ -3,7 +3,6 @@ from demo import *
 import logging
 import os
 import csv
-from paddleocr import PaddleOCR
 import cv2
 import argparse
 import yaml

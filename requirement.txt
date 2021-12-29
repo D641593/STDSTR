@@ -17,3 +17,5 @@ fastai
 LMDB
 Pillow
 flask
+natsort
+Levenshtein
