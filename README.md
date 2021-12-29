@@ -162,20 +162,6 @@ cd STR
     ```
     訓練完成模型儲存於train_models/xxxxxx，xxxxxx資料夾於train.yaml內可定義
 
-- **辨識**<br>
-    須定義predict.yaml，可定義
-    ```
-    1. 預測圖片資料夾
-    2. 圖片csv檔
-    3. 輸出csv檔
-    4. 模型參數檔
-    5. 字典
-    ```
-    執行predict.py進行預測
-    ```bash
-    python predict.py --yaml_file predict.yaml
-    ```
-
 <a name = '5-STD+STR'></a>
 ## 5. STD + STR
 - ****
@@ -190,7 +176,15 @@ cd STR
     cd ..
     python STDtoSTR.py --res_img_dir STD/demo_results/ --img_dir STD/datasets/logoHigh/private --output_dir STR/train_data/private_high_crop
     ```
-    完成後定義predict.yaml，執行
+    須定義predict.yaml，可定義
+    ```
+    1. 預測圖片資料夾
+    2. 圖片csv檔
+    3. 輸出csv檔
+    4. 模型參數檔
+    5. 字典
+    ```
+    執行predict.py進行預測
     ```bash
     cd STR
     python predict.py --yaml_file predict.yaml
