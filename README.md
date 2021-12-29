@@ -32,7 +32,7 @@
     # python dependencies
     pip install -r requirement.txt
 
-    # install PyTorch with cuda-10.1
+    # install PyTorch with cuda-10.2
     conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
 
     # make sure your cuda path of $CUDA_HOME is the same version as your cuda in PyTorch
